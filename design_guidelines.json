@@ -1,0 +1,208 @@
+{
+  "project_name": "Crown Stone Construction",
+  "tagline": "Building Dreams. Creating Landmarks.",
+  "brand_identity": {
+    "personality": ["Premium", "Trustworthy", "Modern", "Professional", "Innovative", "Customer-focused"],
+    "tone": "Architectural studio sophistication, editorial luxury, confident engineering excellence",
+    "location": "Tamil Nadu, India",
+    "founders": [
+      {
+        "name": "Er. S. Suriya Raj",
+        "role": "Co-Founder & Chief Executive Engineer",
+        "bio": "Specializing in structural engineering, turnkey execution, and precision project delivery across Tamil Nadu."
+      },
+      {
+        "name": "Er. K. Hariprasath",
+        "role": "Co-Founder & Principal Design Architect",
+        "bio": "Expert in 2D/3D architectural spatial planning, contemporary elevation design, and luxury interior concepts."
+      }
+    ]
+  },
+  "colors": {
+    "primary": "#171717",
+    "primary_name": "Charcoal Black",
+    "secondary": "#F8F7F3",
+    "secondary_name": "Warm White",
+    "accent": "#C6A15B",
+    "accent_name": "Royal Gold",
+    "supporting": "#777777",
+    "supporting_name": "Concrete Grey",
+    "dark_card": "#222222",
+    "light_card": "#FFFFFF",
+    "gold_gradient": "linear-gradient(135deg, #D4AF37 0%, #C6A15B 50%, #997A35 100%)",
+    "rules": "Never use bright saturated neon colors. Use 1px Royal Gold borders (#C6A15B) with 20-40% opacity for subtle dividers and luxury accents. Alternating section backgrounds between Charcoal Black (#171717) and Warm White (#F8F7F3)."
+  },
+  "typography": {
+    "heading_font": "Playfair Display, serif",
+    "body_font": "Inter, sans-serif",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-serif",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold",
+      "h3_card": "text-xl sm:text-2xl font-serif font-medium",
+      "body": "text-base leading-relaxed text-neutral-300 dark:text-neutral-400",
+      "eyebrow": "text-xs uppercase tracking-[0.25em] text-[#C6A15B] font-medium"
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "type": "Full-screen Kinetic Architectural Hero",
+      "bg": "#171717",
+      "elements": [
+        "Kinetic line-by-line reveal animation for 'Building Dreams. Creating Landmarks.'",
+        "Subheadline: From innovative architectural designs to exceptional construction, Crown Stone Construction transforms your vision into reality.",
+        "Primary CTA button: 'Explore Our Services' (Gold filled pill/sharp button with hover glow, data-testid='hero-explore-services-cta')",
+        "Secondary CTA button: 'Get a Free Consultation' (Gold outline button with arrow icon, data-testid='hero-free-consultation-cta')",
+        "High-resolution architectural hero background image with subtle dark overlay (bg-black/50 gradient)",
+        "Key stats strip: 100+ Completed Projects, 100% On-Time Delivery, 10+ Years Engineering Excellence"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "headline": "Building Trust Through Excellence",
+      "bg": "#F8F7F3",
+      "elements": [
+        "Architectural studio story emphasizing Tamil Nadu heritage and engineering precision",
+        "Founder profiles: Er. S. Suriya Raj & Er. K. Hariprasath with elegant cards, structural detail accents, and qualifications",
+        "Core values grid: Structural Integrity, Architectural Artistry, Timely Handover"
+      ]
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "headline": "Comprehensive Construction & Architectural Solutions",
+      "bg": "#171717",
+      "cards": [
+        {"title": "Construction Works", "description": "Turnkey residential and commercial structural construction executed with highest grade materials and engineered precision."},
+        {"title": "Renovation Works", "description": "Complete structural modifications, facade redesigns, and modern structural revamps for aging properties."},
+        {"title": "Building Plan Approval", "description": "Hassle-free government sanctioning, DTCP/CMDA/Local Body building plan approval assistance."},
+        {"title": "2D Architectural Planning", "description": "Precision floor plans, structural layouts, Vastu-compliant spatial geometry, and electrical/plumbing schematics."},
+        {"title": "3D Architectural Design", "description": "Photorealistic 3D exterior elevations, structural walkthroughs, and spatial lighting simulations."},
+        {"title": "Interior Designing", "description": "Bespoke residential & office interiors, custom cabinetry, lighting, and premium material selection."},
+        {"title": "Exterior Designing", "description": "Modern facade concepts, landscape integration, exterior cladding, and night illumination aesthetics."}
+      ]
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Crown Stone Construction",
+      "bg": "#F8F7F3",
+      "reasons": [
+        {"title": "Experienced Engineering Founders", "desc": "Led directly by qualified civil engineers Er. S. Suriya Raj & Er. K. Hariprasath."},
+        {"title": "Quality Construction Standards", "desc": "Uncompromised cement grade, steel testing, and rigorous site quality audits."},
+        {"title": "Innovative Architectural Designs", "desc": "Contemporary designs tailored to climate, natural ventilation, and aesthetics."},
+        {"title": "Transparent Project Execution", "desc": "Milestone-based stage payments, regular video updates, and zero hidden costs."},
+        {"title": "Customized Design Solutions", "desc": "Bespoke floor plans aligned with your budget, lifestyle, and Vastu needs."},
+        {"title": "Customer Satisfaction", "desc": "Dedicated project manager and post-handover support warranty."}
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "Projects Gallery",
+      "bg": "#171717",
+      "filters": ["All", "Residential Buildings", "Commercial Buildings", "Interior Design", "Exterior Design", "Renovation Projects", "2D & 3D Designs"],
+      "features": [
+        "Category filtering with smooth Framer Motion layout transitions",
+        "Interactive Lightbox Modal showing high-res architectural photos, project scope, location, and engineering specs",
+        "Data testids on filter buttons: data-testid='portfolio-filter-{category-kebab}'"
+      ]
+    },
+    {
+      "id": "process",
+      "name": "Working Process Timeline",
+      "bg": "#F8F7F3",
+      "steps": [
+        {"step": "01", "title": "Initial Consultation", "desc": "Understanding client aspirations, site dimensions, budget parameters, and design scope."},
+        {"step": "02", "title": "Site Visit & Requirement Analysis", "desc": "Comprehensive site inspection, soil topography analysis, and local authority guidelines check."},
+        {"step": "03", "title": "Planning & 2D Design", "desc": "Drafting optimal floor plans, Vastu placement, structural layouts, and space utility maps."},
+        {"step": "04", "title": "3D Visualization", "desc": "Generating photorealistic 3D elevations and interior renders for visual sign-off."},
+        {"step": "05", "title": "Approval & Documentation", "desc": "Preparing sanction drawings, government approvals, structural calculation reports, and BOQ."},
+        {"step": "06", "title": "Construction & Execution", "desc": "Ground excavation, structural casting, masonry, quality checks, and scheduled site updates."},
+        {"step": "07", "title": "Final Handover", "desc": "Final touch-ups, deep cleaning, key ceremony, and delivery of structural warranty certificates."}
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "headline": "Let's Build Something Extraordinary.",
+      "bg": "#171717",
+      "phone_1": "+91 9751247799",
+      "phone_2": "+91 7448669505",
+      "email": "groundstoneconstarction1@gmail.com",
+      "instagram": "@crown_stone_constraction",
+      "elements": [
+        "Click-to-call phone buttons (data-testid='phone-link-1' and data-testid='phone-link-2')",
+        "Click-to-email link (data-testid='email-link')",
+        "Instagram link (data-testid='instagram-link')",
+        "Enquiry Form with fields: Full Name, Phone Number, Email Address, Service Required (Dropdown), Project Location, Project Description (data-testid='enquiry-form')",
+        "Form validation with instant success toast notification using Sonner and inline state feedback",
+        "Interactive Google Maps placeholder showing Tamil Nadu headquarters pin with custom dark theme map overlay"
+      ]
+    }
+  ],
+  "components_and_features": {
+    "sticky_nav": {
+      "links": [
+        {"label": "Home", "href": "#hero"},
+        {"label": "About Us", "href": "#about"},
+        {"label": "Services", "href": "#services"},
+        {"label": "Projects", "href": "#portfolio"},
+        {"label": "Our Process", "href": "#process"},
+        {"label": "Contact Us", "href": "#contact"}
+      ],
+      "cta": "Get Free Quote",
+      "style": "Backdrop blur glassmorphism (backdrop-blur-md bg-[#171717]/85 border-b border-[#C6A15B]/20 z-50 fixed top-0 left-0 right-0)"
+    },
+    "whatsapp_floating": {
+      "phone": "+919751247799",
+      "message": "Hello Crown Stone Construction, I would like to inquire about a project.",
+      "test_id": "whatsapp-float-btn"
+    },
+    "editorial_marquee": "BUILDING DREAMS • CREATING LANDMARKS • LUXURY RESIDENTIAL VILLAS • 2D & 3D ARCHITECTURAL PLANNING • TURNKEY CONSTRUCTION • CROWN STONE CONSTRUCTION • TAMIL NADU"
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1613977257363-707ba9348227?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "about_villa": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "villa_pool": "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "modern_building": "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "interior_living": "https://images.unsplash.com/photo-1774199496664-a9690967be5a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "interior_lounge": "https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "facade": "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "testing_and_accessibility": {
+    "data_testids_required": [
+      "hero-explore-services-cta",
+      "hero-free-consultation-cta",
+      "nav-link-home",
+      "nav-link-about",
+      "nav-link-services",
+      "nav-link-projects",
+      "nav-link-process",
+      "nav-link-contact",
+      "enquiry-form",
+      "enquiry-name-input",
+      "enquiry-phone-input",
+      "enquiry-email-input",
+      "enquiry-service-select",
+      "enquiry-location-input",
+      "enquiry-description-input",
+      "enquiry-submit-btn",
+      "phone-link-1",
+      "phone-link-2",
+      "email-link",
+      "instagram-link",
+      "whatsapp-float-btn"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "This application uses .js / .jsx React components located in /app/frontend/src.",
+    "Ensure Lenis smooth momentum scrolling or smooth scroll CSS behavior is active.",
+    "Implement Framer Motion entrance animations with staggered reveals and micro-interactions.",
+    "Use Lucide-react icons for all UI iconography.",
+    "Ensure all contact details (numbers: +91 9751247799, +91 7448669505; email: groundstoneconstarction1@gmail.com; instagram: @crown_stone_constraction; founders: Er. S. Suriya Raj, Er. K. Hariprasath) match verbatim.",
+    "Include full enquiry form submission handling with visual toast message.",
+    "Add all requested data-testid attributes to buttons, inputs, links, and key cards for automated testing."
+  ]
+}
