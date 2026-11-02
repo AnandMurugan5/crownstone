@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { NAV_LINKS, CONTACT, SERVICES, waLink } from "@/data/content";
 import { scrollToSection } from "@/lib/scroll";
-import { CrownMark, WhatsAppIcon, InstagramIcon } from "./Logo";
+import { WhatsAppIcon, InstagramIcon } from "./Logo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -15,7 +15,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <CrownMark className="h-12 w-12" />
+            <img
+              src="/logo.png"
+              alt="Crown Stone Construction logo"
+              className="h-14 w-auto"
+            />
             <p className="mt-5 font-serif text-2xl font-semibold text-warm">
               Crown Stone Construction
             </p>

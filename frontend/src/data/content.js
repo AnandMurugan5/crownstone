@@ -17,7 +17,7 @@ export const CONTACT = {
   phone2Display: "+91 7448669505",
   phone2Tel: "tel:+917448669505",
   phone2Wa: "917448669505",
-  email: "groundstoneconstarction1@gmail.com",
+  email: "crownstoneconstraction1@gmail.com",
   instagramHandle: "@crown_stone_constraction",
   instagramUrl: "https://www.instagram.com/crown_stone_constraction",
   whatsappMessage:

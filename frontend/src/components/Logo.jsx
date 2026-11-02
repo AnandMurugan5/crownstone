@@ -1,48 +1,10 @@
-import { motion } from "framer-motion";
-
-export const CrownMark = ({ className = "h-10 w-10", strokeWidth = 2.4 }) => (
-  <svg viewBox="0 0 64 64" fill="none" className={className} aria-hidden="true">
-    <motion.path
-      d="M15 44 L15 26 L24.5 34 L32 17 L39.5 34 L49 26 L49 44 Z"
-      stroke="#C6A15B"
-      strokeWidth={strokeWidth}
-      strokeLinejoin="round"
-    />
-    <motion.path
-      d="M15 51 h34"
-      stroke="#C6A15B"
-      strokeWidth={strokeWidth}
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-export const AnimatedCrown = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="h-20 w-20" aria-hidden="true">
-    <motion.path
-      d="M15 44 L15 26 L24.5 34 L32 17 L39.5 34 L49 26 L49 44 Z"
-      stroke="#C6A15B"
-      strokeWidth={2.4}
-      strokeLinejoin="round"
-      initial={{ pathLength: 0 }}
-      animate={{ pathLength: 1 }}
-      transition={{ duration: 1.3, ease: [0.65, 0, 0.35, 1] }}
-    />
-    <motion.path
-      d="M15 51 h34"
-      stroke="#C6A15B"
-      strokeWidth={2.4}
-      strokeLinecap="round"
-      initial={{ pathLength: 0 }}
-      animate={{ pathLength: 1 }}
-      transition={{ duration: 0.6, delay: 1.1, ease: "easeOut" }}
-    />
-  </svg>
-);
-
 export const LogoLockup = ({ light = true, compact = false }) => (
   <span className="flex items-center gap-3">
-    <CrownMark className="h-9 w-9 shrink-0" />
+    <img
+      src="/logo.png"
+      alt="Crown Stone Construction logo"
+      className="h-9 w-auto shrink-0"
+    />
     <span className="leading-none">
       <span
         className={`block font-serif ${compact ? "text-lg" : "text-xl"} font-semibold tracking-wide ${

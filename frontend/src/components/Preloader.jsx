@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { AnimatedCrown } from "./Logo";
 
 export default function Preloader({ done }) {
   return (
@@ -11,11 +10,18 @@ export default function Preloader({ done }) {
           exit={{ y: "-100%" }}
           transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
         >
-          <AnimatedCrown />
+          <motion.img
+            src="/logo.png"
+            alt="Crown Stone Construction"
+            className="h-20 w-auto"
+            initial={{ opacity: 0, scale: 0.85, y: 12 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          />
           <motion.p
             initial={{ opacity: 0, letterSpacing: "0.2em" }}
             animate={{ opacity: 1, letterSpacing: "0.5em" }}
-            transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
+            transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
             className="mt-6 font-serif text-lg text-warm sm:text-xl"
           >
             CROWN STONE

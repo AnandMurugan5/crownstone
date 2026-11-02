@@ -17,13 +17,14 @@ Build a premium, fully responsive single-page business website for Crown Stone C
 - Email alert to groundstoneconstarction1@gmail.com wired per Resend playbook (from_name=Crown Stone Construction, reply-to set)
 - Click-to-call ×2, mailto, Instagram, WhatsApp buttons (both numbers) + floating WhatsApp
 - Google Maps embed placeholder ("Serving all of Tamil Nadu"), SEO meta + JSON-LD LocalBusiness, data-testids throughout
+- 2026-11-02: swapped to user's uploaded crown "HS" logo (public/logo.png; favicon = public/favicon.png, square padded on #171717; trimmed to content via PIL; shown in preloader/nav/footer); email updated to crownstoneconstraction1@gmail.com (frontend + OWNER_EMAIL/EMAIL_REPLY_TO)
 
 ## Personas
 - Prospective homeowner in Tamil Nadu wanting construction/renovation/design
 - Client needing plan approval or 2D/3D design before building
 
 ## Known Issues / Backlog
-- P0: Email alert blocked — provider rejects groundstoneconstarction1@gmail.com as "undeliverable" (possible typo: "constarction"). Enquiries still saved. Fix: confirm correct email and update OWNER_EMAIL.
+- P0: Email alert still blocked — provider (Resend) rejects crownstoneconstraction1@gmail.com as "undeliverable_recipient" (support confirmed: mailbox may not exist / typo pattern / prior hard bounce; test to delivered@resend.dev works, so integration is fine). Enquiries still save. Fix: confirm the exact working Gmail (likely "construction" spelled correctly) and update OWNER_EMAIL in backend/.env.
 - P1: Replace stock gallery images with real company project photos (edit src/data/content.js)
 - P1: Admin view of enquiries
 - P2: WhatsApp click-to-chat per-service prefill, Instagram feed section
